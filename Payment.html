@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+        
+        body{
+        	font-family: Verdana,Geneva,Tahoma,sans-serif;
+        	margin: 15px 30px;
+        	font-size: 17px;
+        	padding: 8px;
+        }
+        .container{
+        	background-color: white#f2f2f2;
+        	padding: 5px 20px 15px 20px;
+        	border: 1px solid lightgray;
+        	border-radius: 4px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea{
+        	width: 100%;
+        	padding: 12px;
+        	border: 1px solid white#ccc;
+        	border-radius: 5px;
+        	margin: 10px;
+        }
+        fieldset{
+        	background-color: white#fff;
+        	border: 1px solid white#ccc;
+        }
+        .main_heading{
+        	text-align: center;
+        }
+        input[type="submit"]{
+        	background-color: #4daca1;
+        	color: white;
+        	padding: 15px 20px;
+        	border: none;
+        	border-radius: 4px;
+        	cursor: pointer;
+        	width: 100%;
+        }
+         input[type="submit"]:hover{
+         	background-color: #4caf84;
+         }
+
+
+
+
+		
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Payment form creat by dimpal chuadhary</title>
+</head>
+<body>
+	<div class="container">
+	<form action="" method="get">
+	<h1 class="main_heading"> Payment Form </h1>
+	<hr>
+	<h2>User Information </h2>
+	<p>Name:*<input type="text" name="name"placeholder="dimpal chuadhary" required></p>
+	<fieldset>
+		<legend>Gender</legend>
+		<p>
+			Male <input type="radio" name="gender" id="male" required>Female <input type="radio" name="gender" id="female" required>
+			</p>
+	</fieldset>
+	<p>Address:
+		<br>
+		<textarea placeholder="Enter your Address" name="address" id="address" cols="100" rows="8"></textarea>
+	</p>
+	<p>Email:
+		<br>
+		<input type="email"name="eamil"id="eamil" required placeholder="dc6738@gmail.com"></p>
+	<p>Pin code:<input type="number" name="Pincode"id="email"required placeholder="274402">
+	</p>
+	<h2>Payment Information</h2>
+	<p>Card Type:*
+		<select name="Card_type" id="Card_type" required>
+		<option value="">--Select a Card Type--</option>
+		<option value="visa">Visa</option>
+		<option value="rupay">Rupay</option>
+		<option value="mastercard">MasterCard</option>
+	</select>	
+	</p>
+	<p>Card Number <input type="number" name="Card_number"id="Card_number"required placeholder="1111-2222-3333-4444">
+	</p>
+	<p>	Expiration Date:<input type="date" name="exp_date" id="exp_date">
+	</p>
+	<p>CW <input type="password" name="cvv" id="cvv"required placeholder="123">
+	</p>
+	<input type="submit" value="Pay Now">
+</form>
+</div>
+
+</body>
+</html>
