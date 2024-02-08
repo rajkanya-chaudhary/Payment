@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		*{ margin:0; padding:0; font-family: 'Rubik',sans-serif;}
+		header{
+			width: 100;
+			height: 100;
+			background-image: linear-gradient( to top ,#fff 80%,#c3f5ff 20%)
+		}
+		.navsection{  
+			width: 100; height: 20vh; background-color: yellow;
+			display: flex; justify-content: space-around;
+			align-items: center;
+			background-image: linear-gradient(to top,#fff 80%,#c3f5ff 20%);
+		}
+		.logo{
+			width: 40;
+			color: #fff;
+			background-image: linear-gradient(#8d98e3 40%,#854fee 60%);
+			padding-left: 100px;
+			box-sizing: border-box;
+		}
+		.logo h1{
+			text-transform: uppercase;
+			font-size: 1.6rem;
+			animation: aagepiche 2s linear infinite;
+			animation-direction: alternate;
+		}
+		.@keyframe aagepiche{
+			from{ padding-left:40px;}
+			to { padding-right:40px; }
+		}
+		nav{
+			width: 60%;
+			/*background-color: yellow;*/
+			display: flex;
+			justify-content: space-around;
+		}
+		nav a{
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #000;
+			font-weight: 900;
+			font-size: 17px;
+			position: relative;
+		}
+		nav a:first-child{
+			color: #4458dc;
+		}
+
+		nav a:before{
+			content: "";
+			position: absolute;
+			top: 110%;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			border-bottom: 2px solid #4458dc;
+			transform: all 0.4s linear;
+		}
+		nav a:hover:before{
+			width: 100%;
+		}
+		main{
+			height: 80vh;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.rightside{
+			border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ;
+			background-color: #;
+		}
+		.rightside img{
+			max-width: 500px;
+			height: auto;
+		}
+		.leftside{
+			color: #000;
+			text-transform: uppercase;
+		}
+		.leftside h3{
+			font-size: 40px;
+			margin-bottom: 20px;
+			position: relative;
+		}
+		.leftside h3.after{
+			content: "-";
+			width: 450px;
+			height:3px;
+			position: absolute;
+			top: 43px;
+			left: 23.4px;
+			background: #000;
+		}
+		.leftside h1{
+			margin-top: 20px;
+			font-size: 70px;
+			margin-bottom: 25px;
+		}
+		.leftside h2{
+			margin-bottom: 35px;
+			font-weight: 500px;
+			word-spacing: 4px;
+		}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dimpal website create</title>
+</head>
+<body>
+	<header>
+		<section class="navsection">
+			<div class="logo">
+				<h1>Dimpal chaudhary </h1>
+			</div>
+			<nav>
+				<a href="#">Home</a>
+				<a href="file:///C:/Users/DIMPAL/OneDrive/Desktop/my%20all%20program/dim1.html" target="_blank">services</a>
+				<a href="file:///C:/Users/DIMPAL/OneDrive/Desktop/my%20all%20program/marriage.html">gallery</a>
+				<a href="https://www.youtube.com/watch?v=LZ-Qn4q3sbU">porfolio</a>
+				<a href="https://www.youtube.com/watch?v=FcFbQmJv7fU&list=RDFcFbQmJv7fU&start_radio=1
+                ">about</a>
+				<a href="file:///C:/Users/DIMPAL/OneDrive/Desktop/my%20all%20program/video.html">contact</a>
+			</nav>
+		</section>
+		<main>
+			<div class="leftside">
+				<h3> Hello </h3>
+				<h1> I am dimpal chaudhary </h1>
+				<h2> Web developer and Java Developer</h2>
+				<a href="#" class="btn1">Hire me</a>
+				<a href="#" class="btn2">Contact me</a>
+			</div>
+			<div class="rightside">
+				<img src="ygjklk.png"height="400"width></div>
+
+		</main>
+	</header>
+
+</body>
+</html>
